@@ -17,6 +17,7 @@ namespace Api.Foundation.Data.Model
         public int UserID { get; set; }
         public string FullName { get; set; }
         public string Email { get; set; }
+        public string Password { get; set; }
         public string Salt { get; set; }
         public Nullable<System.DateTime> CreateDt { get; set; }
         public Nullable<System.DateTime> UpdateDt { get; set; }

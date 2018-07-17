@@ -101,10 +101,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\M_User.cs">
+      <DependentUpon>UserDbModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\UserDbModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>UserDbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserDbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\UserDbModel.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -143,6 +151,12 @@
     <Content Include="Model\UserDbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>UserDbModel.Context.cs</LastGenOutput>
+      <DependentUpon>UserDbModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Model\UserDbModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>UserDbModel.edmx</DependentUpon>
+      <LastGenOutput>UserDbModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
