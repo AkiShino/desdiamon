@@ -20,5 +20,8 @@ namespace Api.Foundation.Data.Model
         public string Salt { get; set; }
         public Nullable<System.DateTime> CreateDt { get; set; }
         public Nullable<System.DateTime> UpdateDt { get; set; }
+        public string Password { get; set; }
+        public string ActivationCode { get; set; }
+        public Nullable<sbyte> IsVerified { get; set; }
     }
 }
