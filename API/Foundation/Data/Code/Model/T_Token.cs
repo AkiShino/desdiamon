@@ -12,12 +12,12 @@ namespace Api.Foundation.Data.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class T_Token
+    public partial class T_Token : IEntityBase
     {
         public int Id { get; set; }
         public int UserId { get; set; }
         public string Token { get; set; }
         public string TokenType { get; set; }
-        public Nullable<System.DateTime> ExpireDt { get; set; }
+        public System.DateTime ExpireDt { get; set; }
     }
 }
