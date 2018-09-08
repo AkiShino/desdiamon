@@ -12,17 +12,17 @@ namespace Api.Foundation.Data.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class M_User : IEntityBase
+    public partial class M_RingTemplate : IEntityBase
     {
         public int Id { get; set; }
-        public int UserID { get; set; }
-        public string FullName { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Salt { get; set; }
-        public System.DateTime CreateDt { get; set; }
+        public int RingTemplateID { get; set; }
+        public string TemplateValue { get; set; }
+        public string TemplatePath { get; set; }
+        public System.DateTime CreateDate { get; set; }
+        public int CreateBy { get; set; }
         public Nullable<System.DateTime> UpdateDt { get; set; }
-        public int IsVerified { get; set; }
-        public Nullable<int> UserRole { get; set; }
+        public Nullable<int> UpdateBy { get; set; }
+        public int TemplateType { get; set; }
+        public int TemplateColor { get; set; }
     }
 }

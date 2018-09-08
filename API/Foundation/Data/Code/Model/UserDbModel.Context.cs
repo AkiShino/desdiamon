@@ -27,5 +27,10 @@ namespace Api.Foundation.Data.Model
     
         public virtual DbSet<M_User> M_User { get; set; }
         public virtual DbSet<T_Token> T_Token { get; set; }
+        public virtual DbSet<M_ColorTemplate> M_ColorTemplate { get; set; }
+        public virtual DbSet<M_Product> M_Product { get; set; }
+        public virtual DbSet<M_ProductDetail> M_ProductDetail { get; set; }
+        public virtual DbSet<T_Master> T_Master { get; set; }
+        public virtual DbSet<M_RingTemplate> M_RingTemplate { get; set; }
     }
 }

@@ -12,17 +12,13 @@ namespace Api.Foundation.Data.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class M_User : IEntityBase
+    public partial class M_ProductDetail : IEntityBase
     {
         public int Id { get; set; }
-        public int UserID { get; set; }
-        public string FullName { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public string Salt { get; set; }
-        public System.DateTime CreateDt { get; set; }
-        public Nullable<System.DateTime> UpdateDt { get; set; }
-        public int IsVerified { get; set; }
-        public Nullable<int> UserRole { get; set; }
+        public int DetailID { get; set; }
+        public int ProductID { get; set; }
+        public string RingTemplate { get; set; }
+        public string Jewel { get; set; }
+        public string MainJewel { get; set; }
     }
 }

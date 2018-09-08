@@ -95,7 +95,22 @@
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Model\IEntityBase.cs" />
+    <Compile Include="Model\M_ColorTemplate.cs">
+      <DependentUpon>UserDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\M_Product.cs">
+      <DependentUpon>UserDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\M_ProductDetail.cs">
+      <DependentUpon>UserDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\M_RingTemplate.cs">
+      <DependentUpon>UserDbModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\M_User.cs">
+      <DependentUpon>UserDbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\T_Master.cs">
       <DependentUpon>UserDbModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\T_Token.cs">
