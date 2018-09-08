@@ -12,9 +12,9 @@ namespace Api.Feature.Account.Infrastructure.Exxtensions
 {
     public static class RequestMessageExtensions
     {
-        internal static IMemberServices GetMembershipService(this HttpRequestMessage request)
+        internal static IMemberService GetMembershipService(this HttpRequestMessage request)
         {
-            return request.GetService<IMemberServices>();
+            return request.GetService<IMemberService>();
         }
 
         internal static IEncryptionService GetEncryptionService(this HttpRequestMessage request)

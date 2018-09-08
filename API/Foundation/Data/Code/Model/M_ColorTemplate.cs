@@ -14,12 +14,11 @@ namespace Api.Foundation.Data.Model
     
     public partial class M_ColorTemplate : IEntityBase
     {
-       
+        public int Id { get; set; }
         public int TemplateID { get; set; }
         public string Value { get; set; }
         public int CreateBy { get; set; }
         public System.DateTime CreateDt { get; set; }
         public string ColorName { get; set; }
-        public int Id { get; set; }
     }
 }

@@ -7,8 +7,8 @@
     <ProjectGuid>{8D9DD506-6EFC-4773-B21B-0D1D1B2A9686}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Extension</RootNamespace>
-    <AssemblyName>Extension</AssemblyName>
+    <RootNamespace>Api.Foundation.Extension</RootNamespace>
+    <AssemblyName>Api.Foundation.Extension</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

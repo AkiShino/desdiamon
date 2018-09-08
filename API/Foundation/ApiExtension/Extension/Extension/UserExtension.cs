@@ -2,7 +2,7 @@
 using Api.Foundation.Data.Repository;
 using System.Linq;
 
-namespace Extension.Extension
+namespace Api.Foundation.Extension
 {
     public static class UserExtension
     {

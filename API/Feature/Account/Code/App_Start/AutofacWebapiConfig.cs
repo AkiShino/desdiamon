@@ -52,7 +52,7 @@ namespace Api.Feature.Account.App_Start
                 .InstancePerRequest();
 
             builder.RegisterType<MemberService>()
-                .As<IMemberServices>()
+                .As<IMemberService>()
                 .InstancePerRequest();
 
            

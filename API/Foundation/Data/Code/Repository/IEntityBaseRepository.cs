@@ -20,5 +20,6 @@ namespace Api.Foundation.Data.Repository
         void Delete(T entity);
         void DeleteRange(Expression<Func<T, bool>> predicate);
         void Edit(T entity);
+       
     }
 }

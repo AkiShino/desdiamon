@@ -172,12 +172,6 @@
         <EntityType Name="M_RingTemplate">
           <Key>
             <PropertyRef Name="RingTemplateID" />
-            <PropertyRef Name="TemplateValue" />
-            <PropertyRef Name="TemplatePath" />
-            <PropertyRef Name="CreateDate" />
-            <PropertyRef Name="CreateBy" />
-            <PropertyRef Name="TemplateType" />
-            <PropertyRef Name="TemplateColor" />
           </Key>
           <Property Name="RingTemplateID" Type="Int32" Nullable="false" />
           <Property Name="TemplateValue" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />

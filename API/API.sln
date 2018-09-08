@@ -10,6 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{A09DACCC-6A84-4B4C-BE37-35D0692363B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Foudation.Account", "Foundation\Account\Code\Api.Foudation.Account.csproj", "{61A579E4-BB39-4E87-8BF2-C030DDF322F2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8D9DD506-6EFC-4773-B21B-0D1D1B2A9686} = {8D9DD506-6EFC-4773-B21B-0D1D1B2A9686}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{1733A4DB-6707-4002-B6E7-E665365188ED}"
 EndProject
@@ -24,7 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Feature.Account", "Feat
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extension", "Extension", "{F72B7171-98F2-4AEE-B32D-007BE341908E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension", "Foundation\ApiExtension\Extension\Extension.csproj", "{8D9DD506-6EFC-4773-B21B-0D1D1B2A9686}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.Foundation.Extension", "Foundation\ApiExtension\Extension\Api.Foundation.Extension.csproj", "{8D9DD506-6EFC-4773-B21B-0D1D1B2A9686}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{FB601439-3FCB-4A33-8C7D-EE3426175458}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +66,7 @@ Global
 		{8AE19ABE-AEE2-4CD8-BE08-66D3B0B0B93A} = {1733A4DB-6707-4002-B6E7-E665365188ED}
 		{F72B7171-98F2-4AEE-B32D-007BE341908E} = {4BC15418-CC8E-46BD-BA00-5AB4AED9BAB2}
 		{8D9DD506-6EFC-4773-B21B-0D1D1B2A9686} = {F72B7171-98F2-4AEE-B32D-007BE341908E}
+		{FB601439-3FCB-4A33-8C7D-EE3426175458} = {4BC15418-CC8E-46BD-BA00-5AB4AED9BAB2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6497D12-1A65-4A2A-9066-726CFD3C17FA}

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Extension.Extension
+namespace Api.Foundation.Extension
 {
     public static class TokenExtension
     {

@@ -191,6 +191,10 @@
     <Folder Include="Views\Security\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\Account\Code\Api.Foudation.Account.csproj">
+      <Project>{61A579E4-BB39-4E87-8BF2-C030DDF322F2}</Project>
+      <Name>Api.Foudation.Account</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Data\Code\Api.Foundation.Data.csproj">
       <Project>{3A63D39C-C8E0-47B2-AA8C-23F360E6ADA7}</Project>
       <Name>Api.Foundation.Data</Name>

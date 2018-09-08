@@ -84,5 +84,6 @@ namespace Api.Foundation.Data.Repository
         {
            /// DbContext.Set<T>().RemoveRange(FindBy(predicate));
         }
+      
     }
 }

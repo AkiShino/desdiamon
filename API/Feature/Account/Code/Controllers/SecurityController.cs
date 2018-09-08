@@ -1,6 +1,7 @@
 ﻿using Api.Feature.Account.Infrastructure.Core;
 using Api.Feature.Account.Models;
 using Api.Foundation.Account.Abstract;
+using Api.Foundation.Account.Service;
 using Api.Foundation.Account.Utilities;
 using Api.Foundation.Data.Infrastructure;
 using Api.Foundation.Data.Model;
@@ -15,10 +16,10 @@ namespace Api.Feature.Account.Controllers
   ///  [System.Web.Http.Route("api/Account")]
     public class SecurityController : ApiControllerBase
     {
-        private readonly IMemberServices _memberService;
+        private readonly IMemberService _memberService;
         private readonly IEncryptionService _encryptionService;
 
-        public SecurityController(IMemberServices memberService, IEncryptionService encryptionService, IUnitOfWork _unitOfWork)
+        public SecurityController(IMemberService memberService, IEncryptionService encryptionService, IUnitOfWork _unitOfWork)
             : base(_unitOfWork)
         {
             _memberService = memberService;
@@ -62,7 +63,7 @@ namespace Api.Feature.Account.Controllers
                 }
                 else
                 {
-                    M_User _user = _memberService.CreateUser(user.Email, user.Password, user.FullName);
+                    M_User _user = _memberService.CreateUser(user.Email, user.Password, user.FullName, user.Role);
 
                     return request.CreateResponse(HttpStatusCode.OK);
 
