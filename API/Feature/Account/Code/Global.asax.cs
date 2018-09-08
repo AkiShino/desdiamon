@@ -7,17 +7,22 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using Api.Feature.Account.App_Start;
 
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "Web.config", Watch = true)]
 namespace Code
 {
     public class Global : HttpApplication
     {
-        void Application_Start(object sender, EventArgs e)
+       protected void Application_Start()
         {
             // Code that runs on application startup
+            Bootstrapper.Run();
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+          ///  BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

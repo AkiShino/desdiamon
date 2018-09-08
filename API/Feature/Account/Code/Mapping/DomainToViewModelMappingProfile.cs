@@ -1,0 +1,23 @@
+﻿using Api.Foundation.Data.Dtos;
+using Api.Foundation.Data.Model;
+using AutoMapper;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace Api.Feature.Account.Mapping
+{
+    public class DomainToViewModelMappingProfile : Profile
+    {
+        public override string ProfileName
+        {
+            get { return "DomainToViewModelMappings"; }
+        }
+        [Obsolete("Create a constructor and configure inside of your profile's constructor instead. Will be removed in 6.0")]
+        protected void Configure()
+        {
+            CreateMap<M_User, UserInfoDto>();
+        }
+    }
+}

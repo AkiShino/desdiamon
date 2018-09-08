@@ -1,0 +1,1 @@
+F:\Desdiamon\dev_repair\desdiamon\API\Code.Tests\obj\Debug\Api.Feature.Account.Tests.csproj.CoreCompileInputs.cache
